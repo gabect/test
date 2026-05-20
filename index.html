@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba Login Google + Firebase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Login con Google + Firebase</h1>
+      <p class="subtitle">Página de prueba para autenticación con Google.</p>
+
+      <section id="auth-controls">
+        <button id="loginBtn" class="btn primary">Iniciar sesión con Google</button>
+        <button id="logoutBtn" class="btn secondary" hidden>Cerrar sesión</button>
+      </section>
+
+      <section id="status" class="status">
+        <p>No has iniciado sesión.</p>
+      </section>
+
+      <section class="hint">
+        <h2>Configura tu Firebase</h2>
+        <ol>
+          <li>Abre <code>app.js</code> y reemplaza <code>firebaseConfig</code> con tu proyecto.</li>
+          <li>En Firebase Console habilita Authentication &gt; Sign-in method &gt; Google.</li>
+          <li>Si lo pruebas fuera de localhost, agrega tu dominio en Authorized domains.</li>
+        </ol>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
